@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="css/header&menu.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><b>S&B</b></div>
+        <button class="menu-button" id="menuButton">
+            <span class="menu-icon"></span> Menu 
+        </button>
+
+        <div class="search-bar-container">
+            <input type="text" placeholder="What can we help you find today?" class="search-bar">
+            <button class="search-icon">🔍</button>
+        </div>
+
+        <div class="header-icons">
+            <div class="location">
+                <span>Bangor</span>
+            </div>
+            <div class="cart">
+                <img src="images/shopping-cart.png" alt="Cart Icon" class="icon"> 
+                <span>Cart</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <a class="links" href="#">Top Deals</a>
+        <a class="links" href="#">Deal of the Day</a>
+        <a class="links" href="#">Yes, Best Buy Sells That</a>
+        <a class="links" href="#">My Best Buy Memberships</a>
+        <a class="links" href="#">Credit Cards</a>
+
+        <div class="dropdown">
+          <a class="links" href="">MORE &#9662;</a>
+          <div class="dropdown-content">
+              <a href="#"> option 1</a>
+              <a href="#"> option 1</a>
+              <a href="#">option  3</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="links" href="">account &#9662;</a>
+        <div class="dropdown-content">
+          <a href="#"> option 1</a>
+          <a href="#"> option 1</a>
+          <a href="#">option  3</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+      <a class="links" href="">order status &#9662;</a>
+      <div class="dropdown-content">
+        <a href="#"> option 1</a>
+        <a href="#"> option 1</a>
+        <a href="#">option  3</a>
+      </div>
+  </div>
+
+  <div class="dropdown">
+    <a class="links" href="">saved items &#9662;</a>
+    <div class="dropdown-content">
+      <a href="#"> option 1</a>
+      <a href="#"> option 1</a>
+      <a href="#"> option  3</a>
+    </div>
+</div>
+
+    
+
+
+      <div class="sidebar" id="sidebar">
+        <div class="menu-section">
+          <h4>Shop by Department</h4>
+          <a href="#" class="menu-item">Appliances</a>
+          <a href="#" class="menu-item">TV & Home Theater</a>
+          <a href="#" class="menu-item">Computers & Tablets</a>
+          <a href="#" class="menu-item">Cell Phones</a>
+          <a href="#" class="menu-item">Audio</a>
+          <a href="#" class="menu-item">Video Games</a>
+        </div>
+        <div class="menu-section">
+          <h4>Deals</h4>
+          <a href="#" class="menu-item">View All Deals</a>
+        </div>
+        <div class="menu-section">
+          <h4>Support & Services</h4>
+          <a href="#" class="menu-item">Customer Support</a>
+          <a href="#" class="menu-item">Repair Services</a>
+        </div>
+        <div class="menu-section">
+          <h4>Brands</h4>
+          <a href="#" class="menu-item">Top Brands</a>
+        </div>
+      </div>
+
+    <script src="js/header&menu.js"></script>
+</body>
+</html>
