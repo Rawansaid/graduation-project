@@ -3,78 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Dropdown Menu</title>
-    <link rel="stylesheet" href="css/header&menu.css">
+    <title>Header</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
+  <!-- ================================================== Start Header ==================================================== -->
+    <div class="aside-overlay">
+      <button class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
     <header class="header">
-        <div class="logo"><b>S&B</b></div>
-        <button class="menu-button" id="menuButton">
-            <span class="menu-icon"></span> Menu 
-        </button>
-
-        <div class="search-bar-container">
-            <input type="text" placeholder="What can we help you find today?" class="search-bar">
-            <button class="search-icon">🔍</button>
+        <div class="main-header-content">
+          <div class="logo"><b>S&B</b></div>
+          <button class="menu-button" id="menuButton">
+              <span class="menu-icon"></span> Menu 
+          </button>
+  
+          <div class="search-bar-container">
+              <input type="text" placeholder="What can we help you find today?" class="search-bar">
+              <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+  
+          <div class="header-icons">
+              <div class="cart">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+          </div>
         </div>
-
-        <div class="header-icons">
-            <div class="location">
-                <span>Bangor</span>
-            </div>
-            <div class="cart">
-                <img src="images/shopping-cart.png" alt="Cart Icon" class="icon"> 
-                <span>Cart</span>
+        <div class="navbar">
+          <a class="links" href="#">Top Deals</a>
+          <a class="links" href="#">Deal of the Day</a>
+          <a class="links" href="#">Yes, Best Buy Sells That</a>
+          <a class="links" href="#">My Best Buy Memberships</a>
+          <a class="links" href="#">Credit Cards</a>
+  
+          <div class="dropdown">
+            <a class="links" href="">MORE &#9662;</a>
+            <div class="dropdown-content">
+                <a href="#"> option 1</a>
+                <a href="#"> option 1</a>
+                <a href="#">option  3</a>
             </div>
         </div>
-    </header>
-
-    <div class="navbar">
-        <a class="links" href="#">Top Deals</a>
-        <a class="links" href="#">Deal of the Day</a>
-        <a class="links" href="#">Yes, Best Buy Sells That</a>
-        <a class="links" href="#">My Best Buy Memberships</a>
-        <a class="links" href="#">Credit Cards</a>
-
+  
         <div class="dropdown">
-          <a class="links" href="">MORE &#9662;</a>
+          <a class="links" href="">account &#9662;</a>
           <div class="dropdown-content">
-              <a href="#"> option 1</a>
-              <a href="#"> option 1</a>
-              <a href="#">option  3</a>
+            <a href="#">option 1</a>
+            <a href="#">option 2</a>
+            <a href="#">option 3</a>
           </div>
       </div>
-
+  
       <div class="dropdown">
-        <a class="links" href="">account &#9662;</a>
+        <a class="links" href="">order status &#9662;</a>
         <div class="dropdown-content">
-          <a href="#"> option 1</a>
-          <a href="#"> option 1</a>
-          <a href="#">option  3</a>
+          <a href="#">option 1</a>
+          <a href="#">option 2</a>
+          <a href="#">option 3</a>
         </div>
     </div>
-
+  
     <div class="dropdown">
-      <a class="links" href="">order status &#9662;</a>
+      <a class="links" href="">saved items &#9662;</a>
       <div class="dropdown-content">
-        <a href="#"> option 1</a>
-        <a href="#"> option 1</a>
-        <a href="#">option  3</a>
+        <a href="#">option 1</a>
+        <a href="#">option 2</a>
+        <a href="#">option 3</a>
       </div>
   </div>
+  
+      
+  
+  
 
-  <div class="dropdown">
-    <a class="links" href="">saved items &#9662;</a>
-    <div class="dropdown-content">
-      <a href="#"> option 1</a>
-      <a href="#"> option 1</a>
-      <a href="#"> option  3</a>
-    </div>
-</div>
-
-    
-
-
+      </div>
       <div class="sidebar" id="sidebar">
         <div class="menu-section">
           <h4>Shop by Department</h4>
@@ -99,7 +105,10 @@
           <a href="#" class="menu-item">Top Brands</a>
         </div>
       </div>
+    </header>
+  <!-- ================================================== End Header ==================================================== -->
 
-    <script src="js/header&menu.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/header.js"></script>
 </body>
 </html>
